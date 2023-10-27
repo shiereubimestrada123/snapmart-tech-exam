@@ -14,7 +14,7 @@ type CartProps = {
 export default function Cart({ handleClearCart, cart, decrementQuantity, setCart, incrementQuantity, totalItems, totalAmount, handleCheckout }: CartProps) {
   return (
     <div className='w-1/4'>
-			<div className='px-6 py-4 bg-slate-500'>
+			<div className='px-6 py-4 bg-slate-300'>
 				<h1 className='text-2xl'>My Cart</h1>
 				<div className='text-right'>
 					<button onClick={handleClearCart}>Clear Cart</button>
@@ -68,7 +68,7 @@ export default function Cart({ handleClearCart, cart, decrementQuantity, setCart
 					</div>
 				))}
 			</div>
-			<div className='px-6 py-4 bg-slate-500'>
+			<div className='px-6 py-4 bg-slate-300'>
 				<p>Total Items: {totalItems}</p>
 				<p>Total Amount: ${totalAmount.toFixed(2)}</p>
 				<button onClick={handleCheckout}>Checkout</button>
